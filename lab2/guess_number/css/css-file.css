@@ -1,0 +1,120 @@
+body {
+    font-family: Arial;
+    background-color: lightblue;
+    background-image: url('../img/Guess_game.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 32px;
+}
+
+h2 {
+    color: gray;
+    font-size: 18px;
+}
+
+.stats {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 50%;
+}
+
+.stat-box.wins {
+    border: 3px solid green;
+}
+
+.stat-box.losses {
+    border: 3px solid red;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: black;
+}
+
+.stat-value {
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#resetBtn {
+    background-color: red;
+    margin-top: 10px;
+}
+
+#resetBtn:hover {
+    background-color: darkred;
+}
+
+#feedback {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+
+#guesses {
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+div {
+    margin-bottom: 15px;
+}
