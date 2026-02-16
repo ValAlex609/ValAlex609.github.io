@@ -1,0 +1,10 @@
+#title-display{
+    font-size: 5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

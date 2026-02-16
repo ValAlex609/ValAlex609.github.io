@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2: Guess a number!</title>
-    <script src="js/script.js" defer>
-    </script>
+    <title>Lab 2: Guess the Number</title>
+    <script src="js/script.js" defer></script>
+    <link href="css-file.css" rel="stylesheet">
+
+    <style>
+
+    </style>
 </head>
+
 <body>
+
     <header>
-        <h1> Guess the Number!</h1>
+        <h1 id="title-display">Guess the Number!</h1>
     </header>
 
-    Guess:
-    <input id="userGuess" type="text" size="5">
+    <div class="center">
+        <h2>Guess a number between 1 and 99</h2>
+    </div>
+
+    
+    <p  class="center" id="wins">
+            Wins: 0
+    </p>
+
+    <p class="center" id="loses">
+        Loses: 0
+    </p>
+
+    <div class="center">
+        Guess:
+        <!-- creates a text box -->
+        <input id="userGuess" type="text" size="3">
+
+        <br>
+
+        <button id="guessBtn" class="center"> Guess! </button>
+        <button id="retryBtn" class="center"> Retry! </button>
+
+    </div>
 
     <br>
 
-    <button id="guessButton"> Guess! </button>
+    <div class="center">
+        Previous Guesses:         <span id="userGuesses"> </span>
+    </div>
+
+    <h1 id="highLow">
+
+    </h1>
 
     <br>
+    <img src="img/cats.jpg">
 
-    Previous Guesses:
-    <div id="userGuesses"></div>
+
 </body>
+
 </html>
