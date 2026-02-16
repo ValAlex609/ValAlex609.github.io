@@ -47,7 +47,7 @@ function checkGuess()
     }
     
     attempts++;
-    console.log("Attempts:" + attempts);
+    console.log("Attempts: " + attempts);
     feedback.style.color = "orange";
     
     if (guess == randomNumber)
@@ -86,6 +86,7 @@ function gameOver() {
 }
 
 function updateStats() {
+     console.log("updateStats called! gamesWon:", gamesWon, "gamesLost:", gamesLost);
     document.querySelector("#gamesWon").textContent = gamesWon;
     document.querySelector("#gamesLost").textContent = gamesLost;
 }
