@@ -1,0 +1,126 @@
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: black;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#hint-area {
+  font-size: 0.95rem;
+  margin: 10px auto;
+  max-width: 480px;
+}
+
+.hint-label {
+  font-weight: bold;
+}
+
+.hint-extra {
+  display: block;
+  margin-top: 5px;
+  color: darkorange;
+  font-style: italic;
+}
+
+#lives-counter {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+#word-display {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px auto;
+}
+
+.letter-box {
+  width: 28px;
+  height: 36px;
+  border-bottom: 2px solid black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 15px auto;
+  max-width: 420px;
+}
+
+.key {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.key:hover:not(:disabled) {
+  background-color: #ddd;
+}
+
+.key:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.key.correct {
+  background-color: lightgreen;
+}
+
+.key.wrong {
+  background-color: lightcoral;
+}
+
+#message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+#wrong-letters-area {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+#wrong-letters {
+  color: red;
+  font-weight: bold;
+}
+
+#restart-btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#restart-btn:hover {
+  background-color: #eee;
+}
